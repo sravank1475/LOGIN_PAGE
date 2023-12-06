@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    -error-color--:rgb(156, 59, 59);
+    -success-color--:rgb(47, 171, 47);
+    background-image:  url(images/blue.jpg);
+    background-size: cover;
+}
+form{
+    width:30%;
+    height: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 5px;
+    padding:20px;
+} 
+.form{
+    justify-content: center;
+    text-align: center;
+}
+
+.login_lable{
+    color:rgb(6, 91, 250);
+    margin:20px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.error_fill{
+    color:red;
+    padding:5px;
+    border:1px solid red;
+    visibility: hidden;
+    margin:2px
+}
+.form_input{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+    padding: 5px;
+}
+.input_username{
+    padding:10px;
+    font-size: 15px; 
+    
+    border-color: rgba(238, 238, 238, 0.721);
+    border-radius: 5px;
+    outline:none;
+}
+
+.input_username:hover{
+    border-color:rgb(0, 157, 255);
+    border-width: 3px;
+}
+.user_error{
+    padding:5px;
+    color:red;
+    margin:5px;
+    border: 1px solid red;
+    visibility: hidden;
+}
+
+.input_pass{
+    padding:10px;
+    font-size: 15px;
+    margin-bottom: 2px;
+    border-color: #eee;
+    border-radius: 5px;
+    outline:none;
+}
+.input_pass:hover{
+    border-color:rgb(0, 157, 255);
+    border-width: 3px;
+}
+.error_nopass{
+    padding:5px;
+    color:red;
+    margin:5px;
+    border: 1px solid red;
+   visibility:hidden;
+    
+}
+.wrpass{
+    padding:5px;
+    color:red;
+    margin:5px;
+    border: 1px solid red;
+    visibility: hidden; 
+}
+
+.form_names{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.form_names a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.form_names a:hover{
+    text-decoration: underline;
+}
+
+.input_button{
+    width:100%;
+    background: rgb(0, 157, 255);
+    outline:none;
+    border-style: none;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 17px;
+    color:white;
+    margin-bottom: 10px;
+}
+.input_button:active{
+    background:rgb(37, 142, 206) ;
+}
+
+p{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+p a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+p a:hover{
+    text-decoration: underline;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+}
+.button_facebook{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin-bottom: 5px;
+    color:white;
+    font-size: 15px;
+    font-weight: 200;
+    background: rgb(0, 89, 255);
+    border-style: none;
+    border-radius: 5px;
+}
+.button_facebook img{ 
+    
+    display: flex;
+    justify-content: right;
+    width:30px;
+    margin-left: 15px;
+    height: auto;
+    background: #fff;
+    border-radius: 15px;
+    
+}
+.button_facebook:active{
+   background:  rgb(0, 157, 255);
+}
+.button_google{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin-bottom: 5px;
+    background: white;
+    color:white;
+    font-size: 15px;
+    font-weight: 200;
+    background: rgb(0, 89, 255);
+    border-style: none;
+    border-radius: 5px;
+}
+.button_google img{ 
+    width:30px;
+    height: auto;
+    margin-left: 30px;
+    background: #fff;
+    border-radius: 15px;
+    
+}
+.button_google:active{
+    background:rgb(0, 157, 255);
+}
+.welcome{
+    width:20%;
+    text-align: center;
+    color:white;
+    position: absolute;
+    padding: 20px;
+    font-weight: 400;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0.7),rgba(0,0,0.7)), url(images/blue.jpg);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:700px){
+    form{
+        width:50%;
+        height: auto;
+    }
+}
+@media only screen and (max-width:600px){
+    form{
+        width:80%;
+        height:auto;
+    }
+    .login_lable{
+        margin:10px;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+    .error_fill{
+        color:red;
+        padding:2px;
+        border:0.5px solid red;
+        visibility: hidden;
+        margin:1px
+    }
+    .form_input{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+        padding:2px;
+    }
+    .input_username{
+        padding:10px; 
+        font-size: 15px; 
+        margin-bottom: 1.5px; 
+        border-color: rgba(238, 238, 238, 0.721);
+        border-radius: 2.5px;
+        outline:none;
+    }
+    .input_username:hover{
+        border-color:rgb(0, 157, 255);
+        border-width: 2px;
+        }
+        .user_error{
+            padding:3px;
+            color:red;
+            margin:3px;
+            border: 0.5px solid red;
+            visibility: hidden;
+        }
+     .input_pass{
+            padding:10px;
+            font-size: 15px;
+            margin-bottom: 1.5px;
+            border-color: #eee;
+            border-radius: 2.5px;
+            outline:none;
+        }
+        .input_pass:hover{
+            border-color:rgb(0, 157, 255);
+            border-width: 2px;
+        }
+        .error_nopass{
+            padding:3px;
+            color:red;
+            margin:3px;
+            border: 0.5px solid red;
+           visibility:hidden;
+            
+        }
+        .wrpass{
+            padding:3px;
+            color:red;
+            margin:3px;
+            border: 0.5px solid red;
+            visibility: hidden; 
+        }
+        .form_names{
+            margin-top:3px;
+            margin-bottom:7px;
+        }
+        .buttons{
+            display:flex;
+            flex-direction: column;
+            padding:10px;
+        }
+        .button_facebook{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            padding:7px;
+            margin-bottom: 5px;
+            color:white;
+            font-size: 15px;
+            font-weight: 200;
+            background: rgb(0, 89, 255);
+            border-style: none;
+            border-radius: 5px;
+        }
+
+
+}

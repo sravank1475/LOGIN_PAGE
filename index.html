@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+   
+</head>
+<body>
+    <form onsubmit=" return valid()" action="page.html" >
+        <div class="form" return>
+            <h2 class="login_lable">Login</h2>
+            
+            <div class="form_input">
+                <input class="input_username" id="input_username" type="text" placeholder="User Name"  required>
+                <div class="user_error" id="user_error">fill username correctly</div>
+
+                <input type="password" class="input_pass" id="input_pass" placeholder="password" required>
+                <div class="error_nopass" id="error_nopass">enter the password</div>
+                <div class="wrpass" id="wrpass">
+                    Password must contain 6 digits <br>
+                </div>
+            </div>
+
+
+            <div class="form_names"><a href="#">Forgot password?</a></div>
+
+
+
+            <button  class="input_button" type="submit"   onclick="return valid()">Login</button>
+            <p>Don't have an account?<a href="#">Signup</a></p>
+            <div class="buttons">
+                <button class="button_facebook" action="#">Login with Facebook!<img src="images/facebook.png"></button>
+                <button class="button_google" action="#">Login with Google!<img src="images/google.png"></button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
